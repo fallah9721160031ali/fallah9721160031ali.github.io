@@ -7,6 +7,16 @@ body{
     display: flex;
     padding:20px;
     flex-direction: column;
+    
+}
+
+@font-face {
+    font-family: shabnam;
+    src: url(./asset/fonts/Shabnam.woff);
+}
+@font-face {
+    font-family: "shabnam Medium";
+    src: url(./asset/fonts/Shabnam-Medium.woff);
 }
 
 .header{
