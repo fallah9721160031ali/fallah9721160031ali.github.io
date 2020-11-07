@@ -4,6 +4,9 @@ body{
     margin: 0;
     font-family: "shabnam";
     direction: rtl;
+    display: flex;
+    padding:20px;
+    flex-direction: column;
 }
 
 .header{
@@ -111,6 +114,7 @@ body{
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    flex-grow: 1;
 }
 
 .leftSidebar{
@@ -136,4 +140,9 @@ body{
 .sidebar-item-detail{
     color: #ababab;
     font-size:13px;
+}
+
+.footer{
+    margin-top: 20px;
+    text-align: center;
 }
