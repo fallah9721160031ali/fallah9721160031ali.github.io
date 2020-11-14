@@ -1,187 +1,233 @@
 @font-face {
-    font-family: shabnam;
-    src: url(./asset/fonts/Shabnam.woff);
+    font-family: vazir;
+    src: url(./asset/fonts/Vazir.woff);
 }
 @font-face {
-    font-family: "shabnam Medium";
-    src: url(./asset/fonts/Shabnam-Medium.woff);
+    font-family: "vazir thin";
+    src: url(./asset/fonts/Vazir-Thin.woff);
 }
+
+@font-face {
+    font-family: "vazir light";
+    src: url(./asset/fonts/Vazir-Light.woff);
+}
+@font-face {
+    font-family: "vazir bold";
+    src: url(./asset/fonts/Vazir-Bold.woff);
+}
+
 
 body{
-    /* background-color: #fafafa; */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
-    font-family: "shabnam";
-    direction: rtl;
-    display: flex;
-    padding:20px;
-    flex-direction: column;
-    
+    font-family: "vazir";
+    background-color: #f4f6f9;
+    margin:0px;
+}
+header{
+    padding: 50px;
+}
+.logo{
+    margin-right: 40px;
 }
 
-.header{
-    background-color: #ffffff;
-    padding: 40px 20px;
-    text-align: center;
+nav{
+    background-color: #fcfcfd;
+    padding: 10px 0px;
+   
 }
-.posts{
-    background-color: #ffffff;
-    width: 800px;
-    padding: 20px;
-}
-
-.post{
-    border-radius: 22px;
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.06);
-    padding: 30px;
+nav ul{
     display: flex;
 }
-.rightside-post{
-    flex: 20%;
-    display: flex;
-    flex-direction: column;
-}
-.leftside-post{
-    flex: 80%;
-}
-.header-text{
-    color:rgb(255, 81, 0);
+
+nav ul li{
+    display: block;
+    padding:5px 15px;
+    border-left: 1px solid #eaeef4;
 }
 
-.useravatar{
-    text-align: center;
-}
-.useravatar img{
-    width:150px;
-    height: 150px;
-    border-radius: 50%;
-}
 
-.usename-post{
-    text-align: center;
-    margin-top: 20px;
-    font-family: shabnam Medium;
-    font-size: 16px;
-}
-.userbio-post{
-    text-align: center;
-    font-size: 14px;
-    margin-top:5px;
-}
-.user-data{
-    flex-grow: 1;
-}
-
-.follow-post{
-    color: #ff8600;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.leftside-post{
-    margin-right: 20px;
-}
-.post-title{
-    margin:20px 0;
-    font-weight: bold;
-}
-.post-text{
-    margin-top:20px;
-    font-size: 15px;
-    line-height: 30px;
-}
-.navbar ul{
-    display:flex;
-    direction: rtl;
-    justify-content: center;
-    
-}
-
-.navbar ul li{
-    margin: 0px 10px;
-    display:block;    
-}
-
-.navbar ul li a{
-    color: #000;
+nav ul li a{
     text-decoration: none;
-    padding-bottom: 10px;
-    border-bottom: 2px solid transparent;
-    transition: all 200ms ease-out;
+    font-family: "vazir light";
+    color: #34383e;
 }
 
-.navbar ul li a:hover{
-    color: #ff8600;
-    border-bottom: 2px solid #ff8600;;
-}
-
-#current-page{
-    color: #ff8600;
+nav ul li a:hover{
+    text-decoration: none;
+    font-family: "vazir light";
+    color: #7e31d6;
 }
 
 .content{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
+
+    max-width: 1500px;
+    display: grid;
+    grid-gap:30px;
+    grid-template-columns: 1fr 3fr;
+    padding:40px;
+    margin-top: 10px;
+    margin: auto;
 }
 
-.leftSidebar{
-    margin-right: 30px;
-    width: 300px;
-}
-.sidebar-item{
-    margin: 30px 0;
+.panel{
+    background-color: #fcfcfd;
+    border-radius: 20px;
 }
 
-.sidebar-header{
+.sidebar-title{
     text-align: center;
-    color: #ff8600;
-    font-weight: bold;
-    font-size: 17px;
+    padding: 0px 0px;
+    padding-top:30px;
+    color:#7e31d6;
+    font-family: "vazir bold";
+    font-size: 18px;
+}
+.sidebar-content{
+    padding:40px;
+}
+.filter-options{
     margin-bottom: 20px;
 }
-
-.sidebar-item-title{
-    font-size: 15px;
-    margin-bottom: 5px;
+.filter-values{
+    margin: 10px 0px;
 }
-.sidebar-item-detail{
-    color: #ababab;
-    font-size:13px;
+.filter-values select{
+    width:100%;
+    padding: 10px;
+    border: 0px;
+    background-color: #f0f2f5;
+    border-radius: 5px;
+    font-family: "vazir";
+    
 }
 
-.footer{
-    margin-top: 20px;
+.filter-btn{
+    margin-top:20px;
+    width: 100%;
+    padding:10px 0px;
+    background-color: #7e31d6;
+    color: white;
+    font-family: "vazir bold";
+    font-size: 16px ;
+    border-radius: 10px;    
     text-align: center;
+    border: 0px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.filter-btn:hover{
+    background-color: #551f93;
+}
+.main-boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:30px;
 }
 
-@media screen and (max-width: 700px) {
-    .navbar ul{
-        display:flex;
-        flex-direction: column;
-        text-align:center;
+.box{
+    background-color: #fcfcfc;
+    border-radius: 20px;
+    height: fit-content;
+}
+.box-title{
+    text-align: center;
+    padding-top:30px;
+    font-family: "vazir bold";
+    color: #323232;
+    font-size: 30px;
+}
+
+.box-description{
+    padding: 0 30px;
+    margin: 30px 0;
+    font-size: 14px;
+}
+
+.box-value{
+    text-align: center;
+    color: #7e31d6;
+    margin-bottom: 30px;
+}
+
+footer{
+    background-color: #fcfcfc;
+    padding: 40px;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.footer-info p{
+    margin: 10px 0px;
+}
+.footer-social{
+    margin: auto;
+    
+}
+.social-icons img{
+    margin: 0px 10px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-pages ul li{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-pages a{
+    text-decoration: none;
+    color: #4e5257;
+}
+
+@media screen and (max-width: 1200px){
+
+    .main-boxes{
+        grid-template-columns: 1fr 1fr;
     }
-    .navbar ul li{
-        margin: 10px 0;
+    .content{
+        grid-template-columns: 1fr 2fr;
     }
-    .leftSidebar{
+}
+
+@media screen and (max-width: 900px){
+
+    .content{
+        grid-template-columns: 1fr;
+    }
+    .main-boxes{
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-content{
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-social{
+        order: 3;
+    }
+    .footer-pages{
         display: none;
     }
-    .post{
-        flex-direction: column;
+}
+
+@media screen and (max-width: 700px){
+
+    .content{
+        grid-template-columns: 1fr;
     }
-    .rightside-post{
-        flex-direction: row;
+    .main-boxes{
+        grid-template-columns: 1fr;
     }
-    .usename-post{
-        font-size: 20px;
-        text-align: start;
+    .footer-content{
+        grid-template-columns: 1fr;
     }
-    .userbio-post{
-        text-align: start;
+    .footer-social{
+        margin-top:30px;
     }
-    .user-data{
-        margin-right: 20px;;        
+    .logo{
+        text-align: center;
     }
 }
