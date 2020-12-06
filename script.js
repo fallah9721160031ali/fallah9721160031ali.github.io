@@ -1,14 +1,11 @@
-let items = document.getElementsByClassName('box-title');
-console.log(items);
-console.log(items[1]);
-items[1].textContent = 'جاوااسکریپت';
-items[1].style.fontWeight = 'bold';
-items[1].style.backgroundColor = '#444444';
-items[1].style.color = '#fff';
+var li = document.getElementsByTagName('li');
+console.log(li);
+console.log(li[1]);
+li[1].textContent = 'این یک متن آزمایشی از طریق جاوا اسکریپت است';
+li[1].style.fontWeight = 'bold';
 
-// Gives error
-//items.style.backgroundColor = '#f4f4f4';
-
-for(var i = 0; i < items.length; i++){
-  items[i].style.borderBottom = "1px solid red";
+for(var i = 0; i < li.length; i++){
+  li[i].style.backgroundColor = '#f4f4f4';
 }
+
+li[1].style.backgroundColor = 'yellow';
